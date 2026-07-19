@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainuplating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>contact Us</li>
+        </ul>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+        let sel = document.querySelector('container');
+        console.log("Selector returns",sel)
+        let Sel = document.querySelectorAll('#nav');
+        console.log("Selector returns",Sel)
+    </script>
+</body>
+</html>
