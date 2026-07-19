@@ -30,7 +30,8 @@ app.post('/', (req, res)=>{
         if (err) {
             console.error(err);
         }
-    });
+    }
+);
     const params = {'message': 'Your form has been submitted successfully'}
     res.status(200).render('index.pug', params);
 })
